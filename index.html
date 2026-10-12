@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL KHAIL SIGN GOLD | 3D Sign Board & Printing Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Amiri:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --accent-black: #111111;
+            --accent-gray: #666666;
+            --border-color: #e0e0e0;
+            --white: #ffffff;
+            --whatsapp-green: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--accent-black);
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--accent-black);
+            color: var(--white);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-bar a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: var(--primary-bg);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Logo Display Box */
+        .logo-box {
+            width: 55px;
+            height: 55px;
+            border: 2px dashed var(--accent-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #f1f1f1;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .logo-box span {
+            font-size: 10px;
+            font-weight: bold;
+            color: var(--accent-black);
+            text-align: center;
+        }
+
+        .logo-area h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: var(--accent-black);
+            letter-spacing: 1px;
+        }
+
+        .arabic-logo {
+            font-family: 'Amiri', serif;
+            font-size: 16px;
+            color: var(--accent-gray);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--accent-black);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gray);
+        }
+
+        .quote-btn-nav {
+            background-color: var(--accent-black);
+            color: var(--white) !important;
+            padding: 10px 22px;
+            border-radius: 30px;
+            transition: background 0.3s !important;
+        }
+
+        .quote-btn-nav:hover {
+            background-color: var(--accent-gray) !important;
+        }
+
+        /* Hero Section (Black & White Pinterest Aesthetic Banner) */
+        .hero {
+            padding: 90px 5%;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 44px;
+            color: var(--accent-black);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--accent-gray);
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-black);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-gray);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        .section-container {
+            padding: 60px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            color: var(--accent-black);
+            margin-bottom: 40px;
+        }
+
+        /* Why Choose Us Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card img, .feature-card video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            color: var(--accent-black);
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            color: var(--accent-gray);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Gallery Grids (New Arrivals & Posts) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .gallery-content {
+            padding: 20px;
+        }
+
+        .gallery-content h4 {
+            font-size: 18px;
+            color: var(--accent-black);
+            margin-bottom: 8px;
+        }
+
+        .gallery-content p {
+            color: var(--accent-gray);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .gallery-btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* ORGANIZED MULTI-BLOCK ADMIN DASHBOARD */
+        #admin-panel-container {
+            background: #ffffff;
+            border: 3px solid var(--accent-black);
+            padding: 35px;
+            margin: 40px 5%;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: none;
+        }
+
+        #admin-panel-container.active {
+            display: block;
+        }
+
+        .admin-section-box {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+        }
+
+        .admin-section-box h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-black);
+            margin-bottom: 12px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .admin-form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            align-items: center;
+        }
+
+        .admin-form-row input, .admin-form-row textarea {
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background: #fff;
+            width: 100%;
+        }
+
+        /* Floating Admin Toggle Button */
+        .admin-toggle-trigger {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--accent-black);
+            color: var(--white);
+            padding: 12px 22px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            z-index: 9999;
+            font-weight: bold;
+            font-size: 15px;
+            border: 2px solid var(--white);
+        }
+
+        .admin-toggle-trigger:hover {
+            background: var(--accent-gray);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--accent-black);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 5%;
+            margin-top: 60px;
+            font-size: 15px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-location-dot"></i> Sultanate of Oman</span>
+            <span><i class="fa-solid fa-phone"></i> +968 98577257</span>
+        </div>
+        <div class="top-bar-right">
+            <span>خطاط الخيل ذهبي</span>
+            <a href="https://wa.me/96898577257" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="brand-container">
+            <!-- Logo Box Display -->
+            <div class="logo-box" id="header-logo-box">
+                <span id="logo-placeholder">Logo</span>
+            </div>
+            <div class="logo-area">
+                <h1>AL KHAIL SIGN GOLD</h1>
+                <span class="arabic-logo">خطاط الخيل ذهبي</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">New Arrivals</a></li>
+            <li><a href="#posts-section">Posts</a></li>
+            <li><a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20get%20a%20quote%20for%20sign%20board." target="_blank" class="quote-btn-nav">Get a Quote</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section (Black & White Pinterest Aesthetic Banner) -->
+    <section class="hero" id="hero-banner-section">
+        <h2>Professional 3D Sign Boards & Printing</h2>
+        <p>All kind of 3D sign board, printing, and custom designing solutions crafted to perfection for your brand in Oman.</p>
+        <div class="hero-buttons">
+            <a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20customize%20my%20banner/signboard." target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-paintbrush"></i> Customize Your Banner
+            </a>
+            <a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20get%20a%20quote." target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Get a Quote (WhatsApp)
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Services Section -->
+    <section class="section-container" id="services">
+        <h3 class="section-title">Why Choose Us?</h3>
+        <div class="features-grid" id="why-choose-us-grid">
+            <!-- Dynamic cards will be added here via Admin Panel -->
+        </div>
+    </section>
+
+    <!-- New Arrivals Section (Video & Image Supported) -->
+    <section class="section-container" id="gallery">
+        <h3 class="section-title">New Arrivals</h3>
+        <div class="gallery-grid" id="dynamic-gallery">
+            <!-- Dynamic new arrivals will be added here via Admin Panel -->
+        </div>
+    </section>
+
+    <!-- Dedicated Posts Section (Unlimited Uploads) -->
+    <section class="section-container" id="posts-section">
+        <h3 class="section-title">Recent Posts & Projects</h3>
+        <div class="gallery-grid" id="dynamic-posts-grid">
+            <!-- Dynamic posts will be added here via Admin Panel -->
+        </div>
+    </section>
+
+    <!-- ORGANIZED ADMIN DASHBOARD (Hidden on Netlify Public View) -->
+    <div id="admin-panel-container">
+        <h3 style="color: var(--accent-black); font-family: 'Playfair Display', serif; margin-bottom: 20px;"><i class="fa-solid fa-lock"></i> Admin Dashboard Control Panel</h3>
+
+        <!-- BLOCK 1: Logo Upload -->
+        <div class="admin-section-box">
+            <h4><i class="fa-solid fa-image"></i> Block 1: Company Logo Manager</h4>
+            <div class="admin-form-row">
+                <input type="file" id="admin-logo-file" accept="image/*">
+                <button class="btn btn-primary" onclick="publishLogo()"><i class="fa-solid fa-upload"></i> Publish Logo</button>
+            </div>
+        </div>
+
+        <!-- BLOCK 2: Banner Background Upload -->
+        <div class="admin-section-box">
+            <h4><i class="fa-solid fa-panorama"></i> Block 2: Hero Banner Manager</h4>
+            <div class="admin-form-row">
+                <input type="file" id="admin-banner-file" accept="image/*">
+                <button class="btn btn-primary" onclick="publishBanner()"><i class="fa-solid fa-upload"></i> Publish Banner</button>
+            </div>
+        </div>
+
+        <!-- BLOCK 3: Why Choose Us Card Customizer -->
+        <div class="admin-section-box">
+            <h4><i class="fa-solid fa-list-check"></i> Block 3: Add New "Why Choose Us" Card</h4>
+            <div class="admin-form-row" style="grid-template-columns: 1fr 1fr 1fr auto;">
+                <input type="text" id="why-title" placeholder="Service Title">
+                <input type="text" id="why-desc" placeholder="Short Description">
+                <input type="file" id="why-file" accept="image/*,video/*">
+                <button class="btn btn-primary" onclick="addWhyCard()"><i class="fa-solid fa-plus"></i> Add Card</button>
+            </div>
+        </div>
+
+        <!-- BLOCK 4: New Arrivals Upload (Images & Videos Fixed) -->
+        <div class="admin-section-box">
+            <h4><i class="fa-solid fa-star"></i> Block 4: New Arrivals Manager</h4>
+            <div class="admin-form-row" style="grid-template-columns: 1fr 1fr 1fr auto;">
+                <input type="text" id="arrival-title" placeholder="Arrival Title">
+                <input type="text" id="arrival-desc" placeholder="Short Description">
+                <input type="file" id="arrival-file" accept="image/*,video/*">
+                <button class="btn btn-primary" onclick="addNewArrival()"><i class="fa-solid fa-upload"></i> Publish Arrival</button>
+            </div>
+        </div>
+
+        <!-- BLOCK 5: Dedicated Posts Upload (Unlimited Images & Videos) -->
+        <div class="admin-section-box">
+            <h4><i class="fa-solid fa-photo-film"></i> Block 5: Dedicated Posts Manager (Unlimited Photos/Videos)</h4>
+            <div class="admin-form-row" style="grid-template-columns: 1fr 1fr 1fr auto;">
+                <input type="text" id="post-title" placeholder="Post Title">
+                <input type="text" id="post-desc" placeholder="Short Description">
+                <input type="file" id="post-file" accept="image/*,video/*">
+                <button class="btn btn-primary" onclick="addNewPost()"><i class="fa-solid fa-upload"></i> Publish Post</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Admin Toggle Button -->
+    <div class="admin-toggle-trigger" onclick="toggleAdminPanel()">
+        <i class="fa-solid fa-gear"></i> Admin Panel
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AL KHAIL SIGN GOLD (خطاط الخيل ذهبي). All Rights Reserved.</p>
+        <p>Sultanate of Oman | Contact: +968 98577257</p>
+    </footer>
+
+    <script>
+        // Automatic Netlify Shield: Hide admin by default on public live URL
+        window.addEventListener('DOMContentLoaded', () => {
+            const isNetlify = window.location.hostname.includes('netlify.app');
+            const adminContainer = document.getElementById('admin-panel-container');
+            if (isNetlify) {
+                adminContainer.classList.remove('active');
+            }
+        });
+
+        function toggleAdminPanel() {
+            const panel = document.getElementById('admin-panel-container');
+            if (panel.classList.contains('active')) {
+                panel.classList.remove('active');
+            } else {
+                panel.classList.add('active');
+                panel.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Block 1: Publish Logo
+        function publishLogo() {
+            const fileInput = document.getElementById('admin-logo-file');
+            if (fileInput.files.length === 0) {
+                alert('Please select a logo image.');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const logoBox = document.getElementById('header-logo-box');
+                logoBox.innerHTML = `<img src="${e.target.result}" alt="Logo">`;
+                alert('Logo published successfully!');
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+
+        // Block 2: Publish Banner
+        function publishBanner() {
+            const fileInput = document.getElementById('admin-banner-file');
+            if (fileInput.files.length === 0) {
+                alert('Please select a banner image.');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const heroSection = document.getElementById('hero-banner-section');
+                heroSection.style.background = `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('${e.target.result}')`;
+                heroSection.style.backgroundSize = 'cover';
+                heroSection.style.backgroundPosition = 'center';
+                alert('Banner published successfully!');
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+
+        // Block 3: Add Why Choose Us Card
+        function addWhyCard() {
+            const title = document.getElementById('why-title').value;
+            const desc = document.getElementById('why-desc').value;
+            const fileInput = document.getElementById('why-file');
+
+            if (!title || !desc || fileInput.files.length === 0) {
+                alert('Please fill in all fields and select a file.');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const fileURL = e.target.result;
+                const grid = document.getElementById('why-choose-us-grid');
+
+                let mediaHTML = '';
+                if (file.type.startsWith('video')) {
+                    mediaHTML = `<video src="${fileURL}" controls></video>`;
+                } else {
+                    mediaHTML = `<img src="${fileURL}" alt="${title}">`;
+                }
+
+                const newCard = document.createElement('div');
+                newCard.className = 'feature-card';
+                newCard.innerHTML = `
+                    ${mediaHTML}
+                    <h3>${title}</h3>
+                    <p>${desc}</p>
+                    <div class="card-buttons">
+                        <a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20customize%20banner%20for%20${encodeURIComponent(title)}" target="_blank" class="btn btn-primary" style="padding: 8px 14px; font-size: 13px;"><i class="fa-solid fa-paintbrush"></i> Customize Banner</a>
+                        <a href="https://wa.me/96898577257?text=I%20want%20a%20quote%20for%20${encodeURIComponent(title)}" target="_blank" class="btn btn-whatsapp" style="padding: 8px 14px; font-size: 13px;"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                `;
+
+                grid.appendChild(newCard);
+
+                document.getElementById('why-title').value = '';
+                document.getElementById('why-desc').value = '';
+                document.getElementById('why-file').value = '';
+                alert('Why Choose Us card added successfully!');
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        // Block 4: New Arrivals Upload (Video & Image Fixed)
+        function addNewArrival() {
+            const title = document.getElementById('arrival-title').value;
+            const desc = document.getElementById('arrival-desc').value;
+            const fileInput = document.getElementById('arrival-file');
+
+            if (!title || !desc || fileInput.files.length === 0) {
+                alert('Please fill in all fields and select a photo or video.');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const fileURL = e.target.result;
+                const gallery = document.getElementById('dynamic-gallery');
+                
+                const newItem = document.createElement('div');
+                newItem.className = 'gallery-item';
+                
+                let mediaHTML = '';
+                if (file.type.startsWith('video')) {
+                    mediaHTML = `<video src="${fileURL}" controls></video>`;
+                } else {
+                    mediaHTML = `<img src="${fileURL}" alt="${title}">`;
+                }
+
+                newItem.innerHTML = `
+                    ${mediaHTML}
+                    <div class="gallery-content">
+                        <h4>${title}</h4>
+                        <p>${desc}</p>
+                        <div class="gallery-btn-group">
+                            <a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20customize%20banner%20for%20${encodeURIComponent(title)}" target="_blank" class="btn btn-primary" style="flex:1; justify-content:center; padding: 10px; font-size: 13px;">
+                                <i class="fa-solid fa-paintbrush"></i> Customize
+                            </a>
+                            <a href="https://wa.me/96898577257?text=I%20want%20to%20order%20${encodeURIComponent(title)}" target="_blank" class="btn btn-whatsapp" style="flex:1; justify-content:center; padding: 10px; font-size: 13px;">
+                                <i class="fa-brands fa-whatsapp"></i> Get Quote
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                gallery.prepend(newItem);
+
+                document.getElementById('arrival-title').value = '';
+                document.getElementById('arrival-desc').value = '';
+                document.getElementById('arrival-file').value = '';
+                alert('New Arrival published successfully!');
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        // Block 5: Dedicated Posts Upload (Video & Image Fixed)
+        function addNewPost() {
+            const title = document.getElementById('post-title').value;
+            const desc = document.getElementById('post-desc').value;
+            const fileInput = document.getElementById('post-file');
+
+            if (!title || !desc || fileInput.files.length === 0) {
+                alert('Please fill in all fields and select a photo or video.');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const fileURL = e.target.result;
+                const postsGrid = document.getElementById('dynamic-posts-grid');
+                
+                const newItem = document.createElement('div');
+                newItem.className = 'gallery-item';
+                
+                let mediaHTML = '';
+                if (file.type.startsWith('video')) {
+                    mediaHTML = `<video src="${fileURL}" controls></video>`;
+                } else {
+                    mediaHTML = `<img src="${fileURL}" alt="${title}">`;
+                }
+
+                newItem.innerHTML = `
+                    ${mediaHTML}
+                    <div class="gallery-content">
+                        <h4>${title}</h4>
+                        <p>${desc}</p>
+                        <div class="gallery-btn-group">
+                            <a href="https://wa.me/96898577257?text=Hello,%20I%20want%20to%20customize%20banner%20for%20${encodeURIComponent(title)}" target="_blank" class="btn btn-primary" style="flex:1; justify-content:center; padding: 10px; font-size: 13px;">
+                                <i class="fa-solid fa-paintbrush"></i> Customize
+                            </a>
+                            <a href="https://wa.me/96898577257?text=I%20want%20to%20order%20${encodeURIComponent(title)}" target="_blank" class="btn btn-whatsapp" style="flex:1; justify-content:center; padding: 10px; font-size: 13px;">
+                                <i class="fa-brands fa-whatsapp"></i> Get Quote
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                postsGrid.prepend(newItem);
+
+                document.getElementById('post-title').value = '';
+                document.getElementById('post-desc').value = '';
+                document.getElementById('post-file').value = '';
+                alert('Recent Post published successfully!');
+            };
+
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
